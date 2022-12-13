@@ -1,0 +1,23 @@
+GET http://localhost:5000/api/users
+###
+GET http://localhost:5000/api/users/1
+###
+GET http://localhost:5000/api/users/0
+###
+POST http://localhost:5000/api/users
+Content-type: application/json
+
+{
+    "email": "lala@mail.com",
+    "password": "02020202"
+}
+###
+PUT http://localhost:5000/api/users/2
+Content-type: application/json
+
+{
+    "email": "hellowilder@mail.com",
+    "password": "0123456"
+}
+###
+DELETE http://localhost:5000/api/users/3
